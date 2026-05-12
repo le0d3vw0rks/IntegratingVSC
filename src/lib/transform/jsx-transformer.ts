@@ -7,12 +7,14 @@ export interface TransformResult {
   cssImports?: Set<string>;
 }
 
-// Helper to create a placeholder module
+// Helper to create a placeholder module for missing imports
 function createPlaceholderModule(componentName: string): string {
   return `
 import React from 'react';
 const ${componentName} = function() {
-  return React.createElement('div', {}, null);
+  return React.createElement('div', {
+    style: { padding: '12px 16px', background: '#fef2f2', border: '1px solid #fca5a5', borderRadius: '6px', color: '#991b1b', fontFamily: 'monospace', fontSize: '13px' }
+  }, 'Missing component: ${componentName}');
 }
 export default ${componentName};
 export { ${componentName} };
@@ -319,10 +321,11 @@ export function createPreviewHTML(
       margin: 0;
       padding: 0;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      overflow-y: auto;
     }
     #root {
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      min-height: 100vh;
     }
     .error-boundary {
       color: red;

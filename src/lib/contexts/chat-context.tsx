@@ -5,22 +5,21 @@ import {
   useContext,
   ReactNode,
   useEffect,
+  useRef,
 } from "react";
 import { useChat as useAIChat } from "@ai-sdk/react";
-import { Message } from "ai";
+import { UIMessage, DefaultChatTransport } from "ai";
 import { useFileSystem } from "./file-system-context";
 import { setHasAnonWork } from "@/lib/anon-work-tracker";
 
 interface ChatContextProps {
   projectId?: string;
-  initialMessages?: Message[];
+  initialMessages?: UIMessage[];
 }
 
 interface ChatContextType {
-  messages: Message[];
-  input: string;
-  handleInputChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
-  handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
+  messages: UIMessage[];
+  sendMessage: (text: string) => void;
   status: string;
 }
 
@@ -33,25 +32,28 @@ export function ChatProvider({
 }: ChatContextProps & { children: ReactNode }) {
   const { fileSystem, handleToolCall } = useFileSystem();
 
-  const {
-    messages,
-    input,
-    handleInputChange,
-    handleSubmit,
-    status,
-  } = useAIChat({
-    api: "/api/chat",
-    initialMessages,
-    body: {
-      files: fileSystem.serialize(),
-      projectId,
-    },
+  const fileSystemRef = useRef(fileSystem);
+  fileSystemRef.current = fileSystem;
+  const projectIdRef = useRef(projectId);
+  projectIdRef.current = projectId;
+
+  const { messages, sendMessage, status } = useAIChat({
+    transport: new DefaultChatTransport({
+      api: "/api/chat",
+      body: () => ({
+        files: fileSystemRef.current.serialize(),
+        projectId: projectIdRef.current,
+      }),
+    }),
+    messages: initialMessages,
     onToolCall: ({ toolCall }) => {
-      handleToolCall(toolCall);
+      handleToolCall({
+        toolName: (toolCall as any).toolName,
+        args: (toolCall as any).input ?? (toolCall as any).args,
+      });
     },
   });
 
-  // Track anonymous work
   useEffect(() => {
     if (!projectId && messages.length > 0) {
       setHasAnonWork(messages, fileSystem.serialize());
@@ -62,9 +64,7 @@ export function ChatProvider({
     <ChatContext.Provider
       value={{
         messages,
-        input,
-        handleInputChange,
-        handleSubmit,
+        sendMessage: (text: string) => sendMessage({ text }),
         status,
       }}
     >

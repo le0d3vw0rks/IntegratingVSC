@@ -1,17 +1,17 @@
 "use client";
 
-import type { ToolInvocation } from "ai";
+import type { DynamicToolUIPart } from "ai";
 import { Loader2 } from "lucide-react";
 
 function getFileName(path: string): string {
   return path.split("/").pop() ?? path;
 }
 
-export function getToolLabel(toolInvocation: ToolInvocation): string {
-  const { toolName } = toolInvocation;
-  const args = toolInvocation.args as Record<string, unknown> | undefined;
-  const command = args?.command as string | undefined;
-  const path = args?.path as string | undefined;
+export function getToolLabel(part: DynamicToolUIPart): string {
+  const { toolName } = part;
+  const input = part.input as Record<string, unknown> | undefined;
+  const command = input?.command as string | undefined;
+  const path = input?.path as string | undefined;
   const filename = path ? getFileName(path) : undefined;
 
   if (toolName === "str_replace_editor") {
@@ -39,14 +39,11 @@ export function getToolLabel(toolInvocation: ToolInvocation): string {
 }
 
 interface ToolInvocationBadgeProps {
-  toolInvocation: ToolInvocation;
+  part: DynamicToolUIPart;
 }
 
-export function ToolInvocationBadge({ toolInvocation }: ToolInvocationBadgeProps) {
-  const isComplete =
-    toolInvocation.state === "result" &&
-    "result" in toolInvocation &&
-    toolInvocation.result;
+export function ToolInvocationBadge({ part }: ToolInvocationBadgeProps) {
+  const isComplete = part.state === "output-available";
 
   return (
     <div className="inline-flex items-center gap-2 mt-2 px-3 py-1.5 bg-neutral-50 rounded-lg text-xs font-mono border border-neutral-200">
@@ -55,7 +52,7 @@ export function ToolInvocationBadge({ toolInvocation }: ToolInvocationBadgeProps
       ) : (
         <Loader2 className="w-3 h-3 animate-spin text-blue-600" />
       )}
-      <span className="text-neutral-700">{getToolLabel(toolInvocation)}</span>
+      <span className="text-neutral-700">{getToolLabel(part)}</span>
     </div>
   );
 }
