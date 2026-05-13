@@ -1,0 +1,112 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e6]:
+      - heading "Navigation Menu" [level=2] [ref=e7]
+      - generic [ref=e8]:
+        - link "Homepage" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img [ref=e11]
+        - generic [ref=e13]:
+          - navigation "Global" [ref=e16]:
+            - list [ref=e17]:
+              - listitem [ref=e18]:
+                - button "Platform" [ref=e20] [cursor=pointer]:
+                  - text: Platform
+                  - img [ref=e21]
+              - listitem [ref=e23]:
+                - button "Solutions" [ref=e25] [cursor=pointer]:
+                  - text: Solutions
+                  - img [ref=e26]
+              - listitem [ref=e28]:
+                - button "Resources" [ref=e30] [cursor=pointer]:
+                  - text: Resources
+                  - img [ref=e31]
+              - listitem [ref=e33]:
+                - button "Open Source" [ref=e35] [cursor=pointer]:
+                  - text: Open Source
+                  - img [ref=e36]
+              - listitem [ref=e38]:
+                - button "Enterprise" [ref=e40] [cursor=pointer]:
+                  - text: Enterprise
+                  - img [ref=e41]
+              - listitem [ref=e43]:
+                - link "Pricing" [ref=e44] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+                  - generic [ref=e45]: Pricing
+          - generic [ref=e46]:
+            - button "Search or jump to…" [ref=e49] [cursor=pointer]:
+              - img [ref=e51]
+              - generic [ref=e53]: Search or jump to...
+              - img [ref=e55]
+            - link "Sign in" [ref=e59] [cursor=pointer]:
+              - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fapps%2Fclaude
+            - link "Sign up" [ref=e60] [cursor=pointer]:
+              - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2Fapps%2Fclaude&source=header
+            - button "Appearance settings" [disabled] [ref=e63]:
+              - img
+  - main [ref=e66]:
+    - generic [ref=e67]:
+      - generic [ref=e72]:
+        - heading "Claude" [level=1] [ref=e73]
+        - heading "GitHub App" [level=2] [ref=e74]
+      - generic [ref=e76]:
+        - generic [ref=e78]:
+          - paragraph [ref=e79]: Run Claude Code from your GitHub Pull Requests and Issues to respond to reviewer feedback, fix CI errors, or modify code, turning it into a virtual teammate that works alongside your development pipelines.
+          - paragraph [ref=e80]: This is built on the publicly available Claude Code SDK.
+        - generic [ref=e81]:
+          - paragraph [ref=e82]: Developer
+          - list [ref=e83]:
+            - listitem [ref=e84]:
+              - img "@anthropics" [ref=e85]
+              - link "anthropics" [ref=e86] [cursor=pointer]:
+                - /url: /anthropics
+            - listitem
+            - listitem [ref=e87]:
+              - img [ref=e88]
+              - link "Website" [ref=e90] [cursor=pointer]:
+                - /url: https://anthropic.com/claude-code
+          - paragraph [ref=e91]:
+            - strong [ref=e92]: Claude
+            - text: is provided by a third-party and is governed by separate terms of service, privacy policy, and support documentation.
+          - link "Report abuse" [ref=e93] [cursor=pointer]:
+            - /url: /contact/report-abuse?report=https%3A%2F%2Fgithub.com%2Fapps%2Fclaude
+            - img [ref=e94]
+            - text: Report abuse
+  - contentinfo [ref=e96]:
+    - heading "Footer" [level=2] [ref=e97]
+    - generic [ref=e98]:
+      - generic [ref=e99]:
+        - link "GitHub Homepage" [ref=e100] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e101]
+        - generic [ref=e103]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e104]:
+        - heading "Footer navigation" [level=3] [ref=e105]
+        - list "Footer navigation" [ref=e106]:
+          - listitem [ref=e107]:
+            - link "Terms" [ref=e108] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e109]:
+            - link "Privacy" [ref=e110] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e111]:
+            - link "Security" [ref=e112] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e113]:
+            - link "Status" [ref=e114] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e115]:
+            - link "Community" [ref=e116] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e117]:
+            - link "Docs" [ref=e118] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e119]:
+            - link "Contact" [ref=e120] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e121]:
+            - button "Manage cookies" [ref=e123] [cursor=pointer]
+          - listitem [ref=e124]:
+            - button "Do not share my personal information" [ref=e126] [cursor=pointer]

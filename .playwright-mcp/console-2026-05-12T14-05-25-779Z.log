@@ -1,0 +1,48 @@
+[     157ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:14537
+[   16394ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ about:srcdoc:0
+[   16420ms] [WARNING] cdn.tailwindcss.com should not be used in production. To use Tailwind CSS in production, install it as a PostCSS plugin or use the Tailwind CLI: https://tailwindcss.com/docs/installation @ https://cdn.tailwindcss.com/:63
+[   17732ms] [ERROR] Failed to load app: SyntaxError: The requested module 'lucide-react' does not provide an export named 'Linkedin' @ about:srcdoc:144
+[   17733ms] [ERROR] Import map: {
+  "imports": {
+    "react": "https://esm.sh/react@19",
+    "react-dom": "https://esm.sh/react-dom@19",
+    "react-dom/client": "https://esm.sh/react-dom@19/client",
+    "react/jsx-runtime": "https://esm.sh/react@19/jsx-runtime",
+    "react/jsx-dev-runtime": "https://esm.sh/react@19/jsx-dev-runtime",
+    "lucide-react": "https://esm.sh/lucide-react",
+    "/App.jsx": "blob:http://localhost:3000/02196931-4481-419c-b13f-db255e208b87",
+    "App.jsx": "blob:http://localhost:3000/02196931-4481-419c-b13f-db255e208b87",
+    "@/App.jsx": "blob:http://localhost:3000/02196931-4481-419c-b13f-db255e208b87",
+    "/App": "blob:http://localhost:3000/02196931-4481-419c-b13f-db255e208b87",
+    "App": "blob:http://localhost:3000/02196931-4481-419c-b13f-db255e208b87",
+    "@/App": "blob:http://localhost:3000/02196931-4481-419c-b13f-db255e208b87"
+  }
+} @ about:srcdoc:145
+[   86607ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5956
+[   86636ms] [LOG] [Fast Refresh] done in 36ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_cf1d9188._.js:5816
+[  191161ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ about:srcdoc:0
+[  191186ms] [WARNING] cdn.tailwindcss.com should not be used in production. To use Tailwind CSS in production, install it as a PostCSS plugin or use the Tailwind CLI: https://tailwindcss.com/docs/installation @ https://cdn.tailwindcss.com/:63
+[  191224ms] [ERROR] Failed to load app: SyntaxError: The requested module 'lucide-react' does not provide an export named 'Linkedin' @ about:srcdoc:144
+[  191224ms] [ERROR] Import map: {
+  "imports": {
+    "react": "https://esm.sh/react@19",
+    "react-dom": "https://esm.sh/react-dom@19",
+    "react-dom/client": "https://esm.sh/react-dom@19/client",
+    "react/jsx-runtime": "https://esm.sh/react@19/jsx-runtime",
+    "react/jsx-dev-runtime": "https://esm.sh/react@19/jsx-dev-runtime",
+    "lucide-react": "https://esm.sh/lucide-react",
+    "/App.jsx": "blob:http://localhost:3000/612a0f39-e0c4-4871-a13f-3a094213e2cc",
+    "App.jsx": "blob:http://localhost:3000/612a0f39-e0c4-4871-a13f-3a094213e2cc",
+    "@/App.jsx": "blob:http://localhost:3000/612a0f39-e0c4-4871-a13f-3a094213e2cc",
+    "/App": "blob:http://localhost:3000/612a0f39-e0c4-4871-a13f-3a094213e2cc",
+    "App": "blob:http://localhost:3000/612a0f39-e0c4-4871-a13f-3a094213e2cc",
+    "@/App": "blob:http://localhost:3000/612a0f39-e0c4-4871-a13f-3a094213e2cc"
+  }
+} @ about:srcdoc:145
+[  197967ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:14537
+[  226857ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ about:srcdoc:0
+[  226860ms] [WARNING] cdn.tailwindcss.com should not be used in production. To use Tailwind CSS in production, install it as a PostCSS plugin or use the Tailwind CLI: https://tailwindcss.com/docs/installation @ https://cdn.tailwindcss.com/:63
+[  249406ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ about:srcdoc:0
+[  249409ms] [WARNING] cdn.tailwindcss.com should not be used in production. To use Tailwind CSS in production, install it as a PostCSS plugin or use the Tailwind CLI: https://tailwindcss.com/docs/installation @ https://cdn.tailwindcss.com/:63
+[  299150ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ about:srcdoc:0
+[  299153ms] [WARNING] cdn.tailwindcss.com should not be used in production. To use Tailwind CSS in production, install it as a PostCSS plugin or use the Tailwind CLI: https://tailwindcss.com/docs/installation @ https://cdn.tailwindcss.com/:63

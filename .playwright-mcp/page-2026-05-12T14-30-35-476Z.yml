@@ -1,0 +1,88 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - heading "React Component Generator" [level=1] [ref=e7]
+      - generic [ref=e9]:
+        - generic [ref=e15]:
+          - generic [ref=e51]:
+            - generic [ref=e54]: create a testimonial card component with modern design
+            - img [ref=e57]
+          - generic [ref=e60]:
+            - img [ref=e63]
+            - paragraph [ref=e70]: I'll create a modern testimonial card component with a distinctive design that avoids generic patterns.
+        - generic [ref=e23]:
+          - textbox "Describe the React component you want to create..." [ref=e24]
+          - button [disabled] [ref=e25]:
+            - img [ref=e26]
+    - separator [ref=e29]
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - tablist [ref=e34]:
+          - tab "Preview" [ref=e35]
+          - tab "Code" [active] [selected] [ref=e36]
+        - generic [ref=e37]:
+          - button "Sign In" [ref=e38]
+          - button "Sign Up" [ref=e39]
+      - generic [ref=e72]:
+        - generic [ref=e80] [cursor=pointer]:
+          - img [ref=e81]
+          - generic [ref=e86]: App.jsx
+        - separator [ref=e87]
+        - code [ref=e92]:
+          - generic [ref=e93]:
+            - generic [ref=e95]:
+              - generic [ref=e98]: "1"
+              - generic [ref=e100]: "2"
+              - generic [ref=e101]:
+                - generic [ref=e102] [cursor=pointer]: 
+                - generic [ref=e103]: "3"
+              - generic [ref=e104]:
+                - generic [ref=e105] [cursor=pointer]: 
+                - generic [ref=e106]: "4"
+              - generic [ref=e107]:
+                - generic [ref=e108] [cursor=pointer]: 
+                - generic [ref=e109]: "5"
+              - generic [ref=e111]:
+                - generic [ref=e112] [cursor=pointer]: 
+                - generic [ref=e113]: "6"
+              - generic [ref=e114]:
+                - generic [ref=e115] [cursor=pointer]: 
+                - generic [ref=e116]: "7"
+              - generic [ref=e118]: "8"
+              - generic [ref=e122]: "9"
+              - generic [ref=e124]: "10"
+              - generic [ref=e126]: "11"
+              - generic [ref=e128]: "12"
+              - generic [ref=e130]: "13"
+              - generic [ref=e132]: "14"
+              - generic [ref=e134]: "15"
+              - generic [ref=e136]: "16"
+              - generic [ref=e138]: "17"
+              - generic [ref=e140]: "18"
+              - generic [ref=e142]: "19"
+            - generic [ref=e229]:
+              - generic [ref=e231]: import TestimonialCard from '@/components/TestimonialCard';
+              - generic [ref=e234]: "export default function App() {"
+              - generic [ref=e236]: return (
+              - generic [ref=e238]: <div className="min-h-screen bg-slate-900 p-8 flex items-center
+              - generic [ref=e240]: justify-center">
+              - generic [ref=e242]: <div className="w-full max-w-md">
+              - generic [ref=e244]: <TestimonialCard
+              - generic [ref=e246]: quote="The attention to detail and quality of work
+              - generic [ref=e248]: exceeded all my expectations. This is exactly what I've
+              - generic [ref=e250]: been looking for."
+              - generic [ref=e252]: author="Sarah Chen"
+              - generic [ref=e254]: role="Product Designer"
+              - generic [ref=e256]: initials="SC"
+              - generic [ref=e258]: "rating={5}"
+              - generic [ref=e260]: accentColor="from-amber-400 to-orange-500"
+              - generic [ref=e262]: />
+              - generic [ref=e264]: </div>
+              - generic [ref=e266]: </div>
+              - generic [ref=e268]: );
+              - generic [ref=e270]: "}"
+            - textbox "Editor content" [ref=e273]
+  - alert [ref=e50]
+  - generic [ref=e274]:
+    - alert
+    - alert
